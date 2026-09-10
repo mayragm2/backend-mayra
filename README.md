@@ -1,2 +1,2 @@
 # backend-mayra
-Este es el repositorio del Módulo de Backend del Bootcamp de GM2Dev 2026.
+This is the repository for the Backend Module of the 2026 GM2dev Bootcamp.
