@@ -162,3 +162,8 @@ curl -w %{time_total} https://httpbin.org/delay/5
 5.716706%   
 
 # Reto 6 — Autenticación básica
+Pasandole nombre y usuario con el parametro user
+curl -v -u "mayra:cueto" -X GET https://httpbin.org/basic-auth/mayra/cueto -H "accept: application/json"
+
+Pasandole nombre y usuario como cabecera, codificado en Base64
+curl -v -X GET https://httpbin.org/basic-auth/mayra/cueto -H "Authorization: Basic bWF5cmE6Y3VldG8="
