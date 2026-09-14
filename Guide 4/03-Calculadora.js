@@ -1,20 +1,20 @@
-function calculateFinalPrice (basePrice, isVIP) {
+function calculateprice (basePrice, isVIP) {
     if (isVIP){
         const finalPrice = basePrice * 0.9;
-        return (finalPrice);
+        return {basePrice, finalPrice};
     } else {
         const finalPrice = basePrice * 1.21;
-        return (finalPrice);
+        return {basePrice, finalPrice};
     }
 }
 
-let finalPrice = calculateFinalPrice (1100, true);
-console.log (finalPrice);
+let price = calculateprice (1100, true);
+console.log (price);
 
-finalPrice = calculateFinalPrice (1100, false);
-console.log (finalPrice);
+price = calculateprice (1100, false);
+console.log (price);
 
-finalPrice = calculateFinalPrice (100, true);
-console.log (finalPrice);
+price = calculateprice (100, true);
+console.log (price);
 
 
