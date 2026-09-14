@@ -16,5 +16,3 @@ console.log (price);
 
 price = calculateprice (100, true);
 console.log (price);
-
-
